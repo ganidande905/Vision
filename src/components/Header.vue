@@ -20,7 +20,7 @@
 /* Header container styles */
 .header {
   margin-top: 1%;
-  
+  margin-bottom: 0;
   text-align: center;
   padding: 20px; /* Simplified padding */
   width: 100%;

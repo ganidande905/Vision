@@ -118,11 +118,13 @@ body {
 .info {
   flex: 1;
   max-width: 550px;
+
 }
 
 h1 {
+  margin-top: 0%;
   font-size: 60px;
-  font-weight: 800;
+  font-weight: 100;
   margin-bottom: 15px;
 }
 
@@ -162,7 +164,7 @@ p {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 15%;
+  margin-top: 0%;
 }
 
 /* Socials Section */
@@ -201,8 +203,11 @@ p {
 }
 
 .socials a i {
+  text-decoration: none;
   font-size: 32px;
+  color: black;
 }
+
 
 /* Skills Section */
 .skills {
@@ -217,15 +222,16 @@ p {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 150px);
-  grid-template-rows: repeat(2);
+  display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
-  margin-left: 75%;
+
 }
 
 .skill-item {
+  flex-grow: 200;
+  flex-grow: 1;
   background-color: #a7a1a1b6;
   padding: 10px 15px;
   border-radius: 5px;
@@ -234,4 +240,99 @@ p {
   font-weight: 600;
   justify-content: center;
 }
+
+
+
+@media screen and (min-width:50px) and (max-width: 375px){
+  .container{
+    margin: auto;
+  }
+  .info{
+    margin: auto;
+  }
+  h1{
+
+    font-size: 30px;
+  }
+  .image{
+    display: none;
+  }
+  .skills-grid{
+    grid-template-columns: repeat(2,150px);
+    grid-template-rows: repeat(6);
+
+ 
+  }
+}
+@media  screen and (min-width: 376px) and (max-width: 430px){
+  .container{
+    margin: auto;
+  }
+  .info{
+    margin: auto;
+  }
+  h1{
+
+    font-size: 30px;
+  }
+  .image{
+    display: none;
+  }
+
+  
+}
+@media  screen and (min-width: 431px) and (max-width: 735px){
+  .container{
+    margin:auto;
+  }
+  .info{
+    margin: auto;
+  }
+  h1{
+
+    font-size: 30px;
+  }
+  .image{
+    display: none;
+  }
+
+
+  
+}
+@media screen and (min-width: 1000px) and (max-width: 1800px){
+  .container{
+    margin: auto;
+  }
+  .info{
+    margin: auto;
+  }
+  h1{
+
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 736px) and (max-width: 999px){
+  .container{
+    margin: auto;
+  }
+  .info{
+    margin: auto;
+  }
+  h1{
+
+    font-size: 30px;
+  }
+  .skill-item {
+  background-color: #a7a1a1b6;
+  padding: 6px 6px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  justify-content: center;
+}
+
+}
+
+
 </style>

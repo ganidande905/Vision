@@ -25,7 +25,7 @@ export default {
 /* Add global styles here */
 body {
   margin: 0;
-  font-family: "Playfair Display";
+  font-family: "Orbitron";
   width: 100%;
   height: 100%;
   --color: #E1E1E1;
