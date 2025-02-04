@@ -34,7 +34,7 @@
           <div class="socials">
             <ul>
               <li>
-                <button><a href="src/assets/Ganeswara D.pdf">Resume</a></button>
+                <button><a href="https://drive.google.com/file/d/1rMunmVbGuji8wiM0rZBwvVrVmEvPwueR/view?usp=sharing">Resume</a></button>
               </li>
               <li><a href="https://www.github.com/ganidande905"><i class='bx bxl-github'></i></a></li>
               <li><a href="www.linkedin.com/in/ganeswara-dande-b973b5261"><i class='bx bxl-linkedin'></i></a></li>
