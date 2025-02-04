@@ -164,7 +164,8 @@ p {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 0%;
+  transform: translate(-30px,-10px);
+
 }
 
 /* Socials Section */
