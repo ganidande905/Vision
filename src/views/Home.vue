@@ -37,7 +37,7 @@
                 <button><a href="https://drive.google.com/file/d/1rMunmVbGuji8wiM0rZBwvVrVmEvPwueR/view?usp=sharing">Resume</a></button>
               </li>
               <li><a href="https://www.github.com/ganidande905"><i class='bx bxl-github'></i></a></li>
-              <li><a href="www.linkedin.com/in/ganeswara-dande-b973b5261"><i class='bx bxl-linkedin'></i></a></li>
+              <li><a href="https://www.linkedin.com/in/ganeswaradande"><i class='bx bxl-linkedin'></i></a></li>
             </ul>
           </div>
         </transition>
@@ -60,11 +60,11 @@
               <div class="skill-item">Python</div>      
               <div class="skill-item">HTML/CSS</div>          
             </div>
+
           </div>
         </transition>
       </div>
     </transition>
-
     <!-- Image Section -->
     <transition name="fade" appear>
       <div class="image">
@@ -72,11 +72,14 @@
       </div>
     </transition>
   </div>
+
 </template>
 
 <script>
+
 export default {
   name: "Info",
+
 };
 </script>
 
@@ -87,20 +90,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Fade-in transition */
-.fade-enter-active {
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-enter-from {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.fade-enter-to {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* Container */
 .container {
@@ -111,6 +100,7 @@ body {
   max-width: 1100px;
   margin: auto;
   padding: 50px 30px;
+  flex-direction: row;
   
 }
 
@@ -212,6 +202,8 @@ p {
 
 /* Skills Section */
 .skills {
+  display: flex;
+  flex-direction: column;
   margin-top: 40px;
 }
 
@@ -240,8 +232,14 @@ p {
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
+  margin-bottom: 0;
 }
-
+.projects-wrapper {
+  max-width: 1100px; /* Match Home.vue layout */
+  margin: auto;
+  padding-top: 50px; /* Add spacing above the projects section */
+  text-align: left; /* Align to match other sections */
+}
 
 
 @media screen and (min-width:50px) and (max-width: 375px){
@@ -307,10 +305,7 @@ p {
   .info{
     margin: auto;
   }
-  h1{
 
-    font-size: 30px;
-  }
 }
 @media screen and (min-width: 736px) and (max-width: 999px){
   .container{
@@ -321,7 +316,7 @@ p {
   }
   h1{
 
-    font-size: 30px;
+    font-size: 60px;
   }
   .skill-item {
   background-color: #a7a1a1b6;

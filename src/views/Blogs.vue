@@ -1,5 +1,5 @@
 <template>
-    <div class="contact">
+    <div class="blog">
       <h1>Contact Me</h1>
       <p>Feel free to reach out via email or connect on LinkedIn.</p>
       <a href="mailto:your-email@example.com">Send Email</a>
@@ -8,7 +8,7 @@
   
   <script>
   export default {
-    name: 'Contact'
+    name: 'Blogs'
   };
   </script>
   

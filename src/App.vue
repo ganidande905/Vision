@@ -4,7 +4,7 @@
     <main>
       <router-view />
     </main>
-    <Footer />
+
   </div>
   
 </template>
@@ -38,4 +38,19 @@ main {
   min-height: 80vh;
 
 }
+/* Fade-in transition */
+.fade-enter-active {
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 </style>

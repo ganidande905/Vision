@@ -5,6 +5,7 @@
         <li v-for="project in projects" :key="project.id">
           <h2>{{ project.name }}</h2>
           <p>{{ project.description }}</p>
+          <img :src="project.img" alt="image"/>
         </li>
       </ul>
     </div>
@@ -28,7 +29,20 @@
   
   <style scoped>
   .projects {
-    padding: 20px;
+    display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 30px;
+  flex-direction: column;
   }
+  img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
   </style>
   
