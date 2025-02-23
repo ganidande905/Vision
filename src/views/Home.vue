@@ -68,7 +68,7 @@
     <!-- Image Section -->
     <transition name="fade" appear>
       <div class="image">
-        <img src="@/assets/Home/image.webp" alt="My image">
+        <img src="@/assets/image.webp" alt="My image">
       </div>
     </transition>
     <!-- <div class="github-contributions">
