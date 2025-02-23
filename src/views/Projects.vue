@@ -1,4 +1,5 @@
 <template>
+  <transition name="fade" appear>
   <div class="cards-container">
     <article
       v-for="(project, index) in projects"
@@ -45,6 +46,7 @@
       </footer>
     </article>
   </div>
+</transition>
 </template>
 
 <script>

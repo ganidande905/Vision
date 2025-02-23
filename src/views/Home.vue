@@ -103,10 +103,6 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-
-
-
-/* Container */
 .container {
   display: flex;
   align-items: flex-start;
@@ -118,8 +114,6 @@ body {
   flex-direction: row;
   
 }
-
-/* Info Section */
 .info {
   flex: 1;
   max-width: 550px;
@@ -169,18 +163,13 @@ p {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-
 }
-
-/* Socials Section */
 .socials {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-top: 30px;
 }
-
 .socials ul {
   display: flex;
   align-items: center;
@@ -189,7 +178,6 @@ p {
   padding: 0;
   margin: 0;
 }
-
 .socials button {
   background-color: black;
   color: white;
@@ -214,9 +202,6 @@ p {
   font-size: 32px;
   color: black;
 }
-
-
-/* Skills Section */
 .skills {
   display: flex;
   flex-direction: column;
@@ -283,7 +268,7 @@ p {
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-/* GitHub Contribution Block */
+
 .github-contributions {
   flex-direction: column;
   text-align: center;
