@@ -9,8 +9,6 @@
           This space is a reflection of my journey—showcasing my skills, projects, and the things I love building.
           From crafting elegant user experiences to solving complex problems, I’m here to turn ideas into reality.
         </p>
-
-        <!-- Work Section -->
         <transition name="fade" appear>
           <div class="work">
             <p>I'm currently working on:</p>
@@ -28,8 +26,6 @@
             </div>
           </div>
         </transition>
-
-        <!-- Socials Section -->
         <transition name="fade" appear>
           <div class="socials">
             <ul>
@@ -65,8 +61,6 @@
         </transition>
       </div>
     </transition>
-
-    <!-- Image Section -->
     <transition name="fade" appear>
   <div class="profile-section">
     <div class="image">
