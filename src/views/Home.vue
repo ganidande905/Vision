@@ -169,6 +169,8 @@ p {
   align-items: center;
   gap: 15px;
   margin-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .socials ul {
   display: flex;
@@ -205,8 +207,9 @@ p {
 .skills {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-right: 0;
+  padding-top: 0;
 }
 
 .skills h2 {
@@ -215,6 +218,7 @@ p {
   margin-bottom: 15px;
   text-align:start;
   margin-right: 0;
+  margin-top: 0;
 }
 
 .skills-grid {
@@ -322,6 +326,9 @@ p {
   .image{
     display: none;
   }
+  .profile-section{
+    display: none;
+  }
 
   
 }
@@ -337,6 +344,9 @@ p {
     font-size: 30px;
   }
   .image{
+    display: none;
+  }
+  .profile-section{
     display: none;
   }
 
