@@ -65,22 +65,27 @@
         </transition>
       </div>
     </transition>
+
     <!-- Image Section -->
     <transition name="fade" appear>
-      <div class="image">
-        <img src="@/assets/image.webp" alt="My image">
-      </div>
-    </transition>
-    <!-- <div class="github-contributions">
-          <h3>My GitHub Contributions</h3>
-          <img 
-            src="https://github-readme-streak-stats.herokuapp.com/?user=ganidande905" 
-            alt="GitHub Contributions"
-            class="github-graph"
-          />
-        </div> -->
+  <div class="profile-section">
+    <div class="image">
+      <img src="@/assets/image.webp" alt="My image">
+    </div>
+    <div class="github-contributions">
+      <h3>My GitHub Contributions</h3>
+      <img 
+        src="https://github-readme-streak-stats.herokuapp.com/?user=ganidande905" 
+        alt="GitHub Contributions"
+        class="github-graph"
+      />
+    </div>
   </div>
+</transition>
+   </div>
 
+
+   
 </template>
 
 <script>
@@ -92,11 +97,45 @@ export default {
 </script>
 
 <style scoped>
+/* Global Reset */
 body {
   margin: 0;
   overflow-x: hidden;
 }
 
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* GitHub Contribution Block */
+.github-contributions {
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.github-contributions h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.github-graph {
+  flex-wrap: wrap;
+  max-width: 70%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Container */
 .container {
   display: flex;
   align-items: flex-start;
@@ -109,6 +148,7 @@ body {
   
 }
 
+/* Info Section */
 .info {
   flex: 1;
   max-width: 550px;
@@ -158,11 +198,11 @@ p {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transform: translate(-30px,-10px);
+
 
 }
 
-
+/* Socials Section */
 .socials {
   display: flex;
   align-items: center;
@@ -186,6 +226,7 @@ p {
   border: none;
   cursor: pointer;
   font-size: 18px;
+  margin-right: 0;
 }
 
 .socials button a {
@@ -204,10 +245,12 @@ p {
 }
 
 
+/* Skills Section */
 .skills {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+  margin-right: 0;
 }
 
 .skills h2 {
@@ -215,6 +258,7 @@ p {
   font-weight: bold;
   margin-bottom: 15px;
   text-align:start;
+  margin-right: 0;
 }
 
 .skills-grid {
@@ -222,6 +266,7 @@ p {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
+  margin-right: 0;
 
 }
 
@@ -236,12 +281,13 @@ p {
   font-weight: 600;
   justify-content: center;
   margin-bottom: 0;
+  margin-right: 0;
 }
 .projects-wrapper {
-  max-width: 1100px;
+  max-width: 1100px; /* Match Home.vue layout */
   margin: auto;
-  padding-top: 50px;
-  text-align: left; 
+  padding-top: 50px; /* Add spacing above the projects section */
+  text-align: left; /* Align to match other sections */
 }
 
 
@@ -331,23 +377,6 @@ p {
   justify-content: center;
 }
 
-}
-.github-contributions {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.github-contributions h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.github-graph {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 
