@@ -68,9 +68,17 @@
     <!-- Image Section -->
     <transition name="fade" appear>
       <div class="image">
-        <img src="@/assets/image.webp" alt="My image">
+        <img src="@/assets/Home/image.webp" alt="My image">
       </div>
     </transition>
+    <!-- <div class="github-contributions">
+          <h3>My GitHub Contributions</h3>
+          <img 
+            src="https://github-readme-streak-stats.herokuapp.com/?user=ganidande905" 
+            alt="GitHub Contributions"
+            class="github-graph"
+          />
+        </div> -->
   </div>
 
 </template>
@@ -84,14 +92,11 @@ export default {
 </script>
 
 <style scoped>
-/* Global Reset */
 body {
   margin: 0;
   overflow-x: hidden;
 }
 
-
-/* Container */
 .container {
   display: flex;
   align-items: flex-start;
@@ -104,7 +109,6 @@ body {
   
 }
 
-/* Info Section */
 .info {
   flex: 1;
   max-width: 550px;
@@ -158,7 +162,7 @@ p {
 
 }
 
-/* Socials Section */
+
 .socials {
   display: flex;
   align-items: center;
@@ -200,7 +204,6 @@ p {
 }
 
 
-/* Skills Section */
 .skills {
   display: flex;
   flex-direction: column;
@@ -235,10 +238,10 @@ p {
   margin-bottom: 0;
 }
 .projects-wrapper {
-  max-width: 1100px; /* Match Home.vue layout */
+  max-width: 1100px;
   margin: auto;
-  padding-top: 50px; /* Add spacing above the projects section */
-  text-align: left; /* Align to match other sections */
+  padding-top: 50px;
+  text-align: left; 
 }
 
 
@@ -328,6 +331,23 @@ p {
   justify-content: center;
 }
 
+}
+.github-contributions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.github-contributions h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.github-graph {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 
