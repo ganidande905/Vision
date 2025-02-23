@@ -80,18 +80,25 @@
         class="github-graph"
       />
     </div>
+    <section class="leetcode-tracker">
+    <h2>My LeetCode Stats</h2>
+    <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=black&color=%23ffa116&label=Solved&query=solvedOverTotal&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fdandegani57&logo=leetcode&logoColor=yellow" alt="LeetCode Badge" class="leetcode-badge" />
+    </section>
   </div>
 </transition>
    </div>
 
-
+<Education/>
    
 </template>
 
 <script>
-
+import Education from "@/views/Education.vue"; 
 export default {
   name: "Info",
+  components:{
+    Education,
+}
 
 };
 </script>
@@ -104,36 +111,6 @@ body {
 }
 
 
-.profile-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-/* GitHub Contribution Block */
-.github-contributions {
-  flex-direction: column;
-  margin-top: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-.github-contributions h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.github-graph {
-  flex-wrap: wrap;
-  max-width: 70%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
 
 /* Container */
 .container {
@@ -284,13 +261,53 @@ p {
   margin-right: 0;
 }
 .projects-wrapper {
-  max-width: 1100px; /* Match Home.vue layout */
+  max-width: 1100px; 
   margin: auto;
-  padding-top: 50px; /* Add spacing above the projects section */
-  text-align: left; /* Align to match other sections */
+  padding-top: 50px; 
+  text-align: left;
 }
 
 
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.leetcode-tracker h2{
+  font-size: 20px;
+}
+.leetcode-tracker {
+  text-align: center;
+
+}
+
+.leetcode-badge {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* GitHub Contribution Block */
+.github-contributions {
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.github-contributions h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.github-graph {
+  flex-wrap: wrap;
+  max-width: 70%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 @media screen and (min-width:50px) and (max-width: 375px){
   .container{
     margin: auto;
