@@ -30,36 +30,36 @@ export const education = [
         }
       ]
     },
-    {
-        degree: "Junior School",
-        university: "2011 - 2019",
-        year: "",
-        details: [
-          {
-            title: "8th Grade",
-            description: "Velocity, Hyderabad (2018-2019)"
-          },
-          {
-            title: "7th Grade",
-            description: "Global Edge School, Hyderabad (2017-20198)"
-          },
-          {
-            title: "6th Grade",
-            description: "Vignan BoTree, Hyderabad (2016-2017)"
-          },
-          {
-            title: "3rd-5th Grade",
-            description: "Ganges Valley School, Hyderabad (2013-2016)"
-          },
-          {
-            title: "1st-2nd Grade",
-            description: "Bhasyam Brooks, Hyderabad (2011-2012)"
-          },
-        ]
-      },
-      {
-        degree: "Primary School",
-        university: "Bachpan, Hyderabad",
-        year: "2008 - 2011",
-      },
+    // {
+    //     degree: "Junior School",
+    //     university: "2011 - 2019",
+    //     year: "",
+    //     details: [
+    //       {
+    //         title: "8th Grade",
+    //         description: "Velocity, Hyderabad (2018-2019)"
+    //       },
+    //       {
+    //         title: "7th Grade",
+    //         description: "Global Edge School, Hyderabad (2017-20198)"
+    //       },
+    //       {
+    //         title: "6th Grade",
+    //         description: "Vignan BoTree, Hyderabad (2016-2017)"
+    //       },
+    //       {
+    //         title: "3rd-5th Grade",
+    //         description: "Ganges Valley School, Hyderabad (2013-2016)"
+    //       },
+    //       {
+    //         title: "1st-2nd Grade",
+    //         description: "Bhasyam Brooks, Hyderabad (2011-2012)"
+    //       },
+    //     ]
+    //   },
+    //   {
+    //     degree: "Primary School",
+    //     university: "Bachpan, Hyderabad",
+    //     year: "2008 - 2011",
+    //   },
   ];
