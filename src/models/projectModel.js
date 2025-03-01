@@ -86,4 +86,5 @@ export const projects = [
     link: "https://www.github.com/ganidande905/CarbonX",
     status :"hold"
   },
+  
 ];
