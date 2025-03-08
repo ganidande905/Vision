@@ -4,8 +4,9 @@
     <transition name="fade" appear>
       <div class="info">
         <h1>Hello, I'm <br /> Ganeswar Dande.</h1>
+        <h2>📍Telangana,India</h2>
         <p>
-          <b>Welcome to My World! 🌟</b><br>
+          <b>Welcome to My Portfolio!</b><br>
           This space is a reflection of my journey—showcasing my skills, projects, and the things I love building.
           From crafting elegant user experiences to solving complex problems, I’m here to turn ideas into reality.
         </p>
