@@ -5,8 +5,8 @@
       <div class="info">
         <h1>Hello, I'm <br /> Ganeswar Dande.</h1>
         <h2>📍Telangana,India</h2>
+        <h3>Pursuing Bachelors in Comp.Sci at Amrita Vishwa Vidyapeetam,Kerala</h3>
         <p>
-          <b>Welcome to My Portfolio!</b><br>
           This space is a reflection of my journey—showcasing my skills, projects, and the things I love building.
           From crafting elegant user experiences to solving complex problems, I’m here to turn ideas into reality.
         </p>
@@ -79,6 +79,9 @@
     <h2>My LeetCode Stats</h2>
     <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=black&color=%23ffa116&label=Solved&query=solvedOverTotal&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fdandegani57&logo=leetcode&logoColor=yellow" alt="LeetCode Badge" class="leetcode-badge" />
     </section>
+    <div class="last-update">
+        <p>Last updated on : 10th March 2025</p>  
+      </div>
   </div>
 </transition>
    </div>
@@ -291,6 +294,9 @@ p {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.last-update p{
+  font-size : small
 }
 @media screen and (min-width:50px) and (max-width: 375px){
   .container{

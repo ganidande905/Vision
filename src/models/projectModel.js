@@ -26,7 +26,6 @@ export const projects = [
     link :"https://github.com/ganidande905/VTrackIt_Backend", 
     status :"ongoing"
   },
-
   {
     title: "Vision",
     stack: "Vue",
@@ -35,6 +34,25 @@ export const projects = [
     description: "I built my portfolio website using Vue.js to learn the stack while developing it. This project showcases my work, skills, and ongoing projects, serving as both a learning experience and a professional portfolio.",
     link: "https://www.github.com/ganidande905/Vision",
     status :"ongoing"
+  },
+  {
+    title: "amMentor-Gamified",
+    stack: "Kotlin,Firebase",
+    icon: "/project/amMentor-Gamified/icon.png",
+    screenshot: "/project/amMentor-Gamified/cover.png",
+    description: "A gamified mentorship platform for students to connect with mentors and track their progress.This has been built as a project for internal hackthon in amFoss. I set up the backend in firebase and has all basic functionalites.",
+    link :"https://github.com/ganidande905/amMentor_Kotlin",
+    status : "completed"
+  },
+  {
+    title : "amMentor-DiscordBot",
+    stack: "Python",
+    icon :"/project/amMentor-DiscordBot/icon.png",
+    screenshot:"/project/amMentor-DiscordBot/cover.png",
+    description: "I built this bot on python, I wanted this bot because it would be easier for me track mentee's progress on the curriculum given in the discord server itslef rather than going to spreadsheet, which later has beceome official club project",
+    link :"https://github.com/amfoss/amMentor",
+    status :"completed"
+
   },
   {
     title: "Flavour Voyage",
