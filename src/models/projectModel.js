@@ -49,7 +49,7 @@ export const projects = [
     stack: "Python",
     icon :"/project/amMentor-DiscordBot/icon.png",
     screenshot:"/project/amMentor-DiscordBot/cover.png",
-    description: "I built this bot on python, I wanted this bot because it would be easier for me track mentee's progress on the curriculum given in the discord server itslef rather than going to spreadsheet, which later has beceome official club project",
+    description: "I built this bot on python, I wanted this bot because it would be easier for me track mentee's progress on the curriculum given in the discord server itslef rather than going to spreadsheet, which later has become official club project",
     link :"https://github.com/amfoss/amMentor",
     status :"completed"
 
