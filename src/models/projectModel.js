@@ -8,24 +8,7 @@ export const projects = [
     link :"https://github.com/CCExtractor/ultimate_alarm_clock",
     status :"ongoing"
   },
-  {
-    title: "V Track It (FrontEnd)",
-    stack: "Flutter",
-    icon: "/project/VTrackIt_Frontend/icon.png",
-    screenshot: "/project/VTrackIt_Frontend/cover.png",
-    description: "Flutter Front end Application designed for managing Duty Leaves, Staybacks, and Events. It facilitates efficient coordination between students, committee members, faculty, and wardens.",
-    link :"https://github.com/ganidande905/VTrackIt_Frontend", 
-    status :"ongoing"
-  },
-  {
-    title: "V Track It (BackEnd)",
-    stack: "Django",
-    icon: "/project/VTrackIt_Frontend/icon.png",
-    screenshot: "/project/VTrackIt_Backend/cover.jpg",
-    description: "Django Backend for the V Track It Application with Role-Based Access Control. This system includes features such as applying for duty leave and staybacks, managing events, and approval workflows.",
-    link :"https://github.com/ganidande905/VTrackIt_Backend", 
-    status :"ongoing"
-  },
+
   {
     title: "Vision",
     stack: "Vue",
@@ -94,7 +77,24 @@ export const projects = [
     link :"https://github.com/ganidande905/STORYMODE-GAME",
     status : "completed"
   },
-
+  {
+    title: "V Track It (FrontEnd)",
+    stack: "Flutter",
+    icon: "/project/VTrackIt_Frontend/icon.png",
+    screenshot: "/project/VTrackIt_Frontend/cover.png",
+    description: "Flutter Front end Application designed for managing Duty Leaves, Staybacks, and Events. It facilitates efficient coordination between students, committee members, faculty, and wardens.",
+    link :"https://github.com/ganidande905/VTrackIt_Frontend", 
+    status :"hold"
+  },
+  {
+    title: "V Track It (BackEnd)",
+    stack: "Django",
+    icon: "/project/VTrackIt_Frontend/icon.png",
+    screenshot: "/project/VTrackIt_Backend/cover.jpg",
+    description: "Django Backend for the V Track It Application with Role-Based Access Control. This system includes features such as applying for duty leave and staybacks, managing events, and approval workflows.",
+    link :"https://github.com/ganidande905/VTrackIt_Backend", 
+    status :"hold"
+  },
   {
     title: "CarbonX",
     stack: "Flutter",
