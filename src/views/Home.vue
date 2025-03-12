@@ -70,7 +70,7 @@
     <div class="github-contributions">
       <h3>My GitHub Contributions</h3>
       <img 
-        src="https://github-readme-streak-stats.herokuapp.com/?user=ganidande905" 
+        src="https://github-readme-stats.vercel.app/api?username=ganidande905&show_icons=true&count_private=true&&theme=vue&hide=stars" 
         alt="GitHub Contributions"
         class="github-graph"
       />
@@ -287,6 +287,7 @@ p {
   font-size: 20px;
   font-weight: bold;
 }
+
 
 .github-graph {
   flex-wrap: wrap;
