@@ -70,7 +70,7 @@
     <div class="github-contributions">
       <h3>My GitHub Contributions</h3>
       <img 
-        src="https://github-readme-stats.vercel.app/api?username=ganidande905&show_icons=true&include_all_commits=true&hide=stars&show=prs_merged_percentage&show_owner=false&count_private=true&&theme=dark#gh-dark-mode-only" 
+        src="https://github-readme-stats.vercel.app/api?username=ganidande905&show_icons=true&hide=stars&show=prs_merged_percentage&show_owner=false&count_private=true&&theme=dark#gh-dark-mode-only" 
 
         alt="GitHub Contributions"
         class="github-graph"
