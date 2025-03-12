@@ -3,6 +3,7 @@
       <h1>Contact Me</h1>
       <p>Feel free to reach out via email or connect on LinkedIn.</p>
       <a href="mailto:dandegani57@gmail.com">Send Email</a>
+
     </div>
   </template>
   
