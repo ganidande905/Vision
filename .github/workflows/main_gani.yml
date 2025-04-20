@@ -1,62 +1,89 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy Node.js app to Azure Web App - gani
+name: Discord Notifications
 
 on:
   push:
-    branches:
+    branches: 
       - main
-  workflow_dispatch:
+      - testing
+  pull_request:
+    types: [opened, closed]
+    branches: 
+      - main
+      - testing
+  create:
+  delete:
 
 jobs:
-  build:
+  notify:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Set up Node.js version
-        uses: actions/setup-node@v3
-        with:
-          node-version: '22.x'
-
-      - name: npm install, build, and test
+      - name: Send Discord Notification
+        env:
+          PERSONAL_WEBHOOK: ${{ secrets.PERSONAL }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_EVENT_ACTION: ${{ github.event.action }}
+          GITHUB_PR_TITLE: ${{ github.event.pull_request.title }}
+          GITHUB_PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          GITHUB_REF_TYPE: ${{ github.event.ref_type }}
+          GITHUB_REF: ${{ github.event.ref }}
+          GITHUB_COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
+          echo "Preparing Discord message..."
 
-      - name: Zip artifact for deployment
-        run: zip release.zip ./* -r
+          if [[ "$GITHUB_EVENT_NAME" == "push" ]]; then
+            COMMIT_MSG="${GITHUB_COMMIT_MSG}"
+            COMMIT_URL="https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
 
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v3
-        with:
-          name: node-app
-          path: release.zip
+            printf '%s\n' \
+              '{' \
+              '  "embeds": [{' \
+              '    "title": "📦 New Push to '"${GITHUB_REPOSITORY}"'",' \
+              '    "description": "__**Author:**__ '"${GITHUB_ACTOR}"'\n__**Message:**__ '"${COMMIT_MSG}"'\n[🔗 View Commit]('"${COMMIT_URL}"')",' \
+              '    "color": 5763719' \
+              '  }]' \
+              '}' > payload.json
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    environment:
-      name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+          elif [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
+            COLOR=3066993
+            [[ "$GITHUB_EVENT_ACTION" == "closed" ]] && COLOR=15158332
 
-    steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v3
-        with:
-          name: node-app
+            printf '%s\n' \
+              '{' \
+              '  "embeds": [{' \
+              '    "title": "🔃 Pull Request '"${GITHUB_EVENT_ACTION^}"' in '"${GITHUB_REPOSITORY}"'",' \
+              '    "description": "**Title:** '"${GITHUB_PR_TITLE}"'\n**Author:** '"${GITHUB_PR_AUTHOR}"'\n[🔗 View PR]('"${GITHUB_PR_URL}"')",' \
+              '    "color": '"${COLOR}" \
+              '  }]' \
+              '}' > payload.json
 
-      - name: Unzip artifact for deployment
-        run: unzip release.zip
+          elif [[ "$GITHUB_EVENT_NAME" == "create" ]]; then
+            printf '%s\n' \
+              '{' \
+              '  "embeds": [{' \
+              '    "title": "🌱 New '"${GITHUB_REF_TYPE^}"' Created",' \
+              '    "description": "**Repository:** '"${GITHUB_REPOSITORY}"'\n**Name:** '"${GITHUB_REF}"'\n**By:** '"${GITHUB_ACTOR}"'",' \
+              '    "color": 15844367' \
+              '  }]' \
+              '}' > payload.json
 
-      - name: 'Deploy to Azure Web App'
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'gani'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_202C5DBCBC44486EB6CB6B70F2B9C93E }}
-          package: .
+          elif [[ "$GITHUB_EVENT_NAME" == "delete" ]]; then
+            printf '%s\n' \
+              '{' \
+              '  "embeds": [{' \
+              '    "title": "🗑️ '"${GITHUB_REF_TYPE^}"' Deleted",' \
+              '    "description": "**Repository:** '"${GITHUB_REPOSITORY}"'\n**Name:** '"${GITHUB_REF}"'\n**By:** '"${GITHUB_ACTOR}"'",' \
+              '    "color": 15158332' \
+              '  }]' \
+              '}' > payload.json
+          fi
+
+          echo "Sending to Discord..."
+          cat payload.json
+          curl -X POST -H "Content-Type: application/json" -d @payload.json "$PERSONAL_WEBHOOK"
