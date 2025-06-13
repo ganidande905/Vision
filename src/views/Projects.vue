@@ -45,17 +45,58 @@
         </button>
       </footer>
     </article>
+    <div>
+      <div class="contrib-section">
+  <h1 class="contrib-heading">Open Source Contributions</h1>
+  <div class="cards-container">
+    <article
+      v-for="(project, index) in openSource"
+      :key="'contrib-' + index"
+      class="card"
+    >
+
+      <section class="card__hero">
+        <img :src="project.screenshot" :alt="project.title" class="card__screenshot" />
+      </section>
+
+      <section class="card__content">
+        <header class="card__hero-header">
+          <span>{{ project.title }}</span>
+          <img :src="project.icon" :alt="project.stack" class="card__icon" />
+        </header>
+        <p class="card__description">{{ project.description }}</p>
+      </section>
+
+      <footer class="card__footer">
+        <div class="card__projects-summary">
+          <div class="card__projects">
+            <p class="card__projects-title">{{ project.stack }}</p>
+          </div>
+        </div>
+
+        <button class="card__btn">
+          <a :href="project.link" target="_blank" rel="noopener noreferrer">
+            <span class="btn-text default-text">View</span>
+            <span class="btn-text hover-text">Go to PR</span>
+          </a>
+        </button>
+      </footer>
+    </article>
+  </div>
+</div>
+    </div>
   </div>
 </transition>
 </template>
 
 <script>
-import { projects } from "@/models/projectModel.js";
+import { projects,openSource } from "@/models/projectModel.js";
 
 export default {
   data() {
     return {
-      projects
+      projects,
+      openSource
     };
   }
 };
@@ -258,5 +299,13 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.contrib-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem;
+  color: #141417;
 }
 </style>

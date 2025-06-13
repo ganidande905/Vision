@@ -1,31 +1,50 @@
 export const projects = [
+  // {
+  //   title: "CCextractor (open source contribution)",
+  //   stack: "Flutter",
+  //   icon: "/project/CCextractor/icon.png",
+  //   screenshot: "/project/CCextractor/cover.jpg",
+  //   description: "I’ve been actively contributing to Ultimate Alarm Clock as part of GSoC, an open-source Flutter project, with a significant number of merged contributions.",
+  //   link :"https://github.com/CCExtractor/ultimate_alarm_clock",
+  //   status :"ongoing"
+  // },
+  // {
+  //   title: "V Track It (FrontEnd)",
+  //   stack: "Flutter",
+  //   icon: "/project/VTrackIt_Frontend/icon.png",
+  //   screenshot: "/project/VTrackIt_Frontend/cover.png",
+  //   description: "Flutter Front end Application designed for managing Duty Leaves, Staybacks, and Events. It facilitates efficient coordination between students, committee members, faculty, and wardens.",
+  //   link :"https://github.com/ganidande905/VTrackIt_Frontend", 
+  //   status :"ongoing"
+  // },
+  // {
+  //   title: "V Track It (BackEnd)",
+  //   stack: "Django",
+  //   icon: "/project/VTrackIt_Frontend/icon.png",
+  //   screenshot: "/project/VTrackIt_Backend/cover.jpg",
+  //   description: "Django Backend for the V Track It Application with Role-Based Access Control. This system includes features such as applying for duty leave and staybacks, managing events, and approval workflows.",
+  //   link :"https://github.com/ganidande905/VTrackIt_Backend", 
+  //   status :"ongoing"
+  // },
   {
-    title: "CCextractor (open source contribution)",
-    stack: "Flutter",
-    icon: "/project/CCextractor/icon.png",
-    screenshot: "/project/CCextractor/cover.jpg",
-    description: "I’ve been actively contributing to Ultimate Alarm Clock as part of GSoC, an open-source Flutter project, with a significant number of merged contributions.",
-    link :"https://github.com/CCExtractor/ultimate_alarm_clock",
+    title: "amMentor EcoSystem",
+    stack: "Flutter, Nextjs, FastAPI",
+    icon: "/project/amMentor/icon.png",  
+    screenshot: "/project/amMentor/cover.png",
+    description: "Led and built the entire amMentor ecosystem for our tech club including the backend (FastAPI), mobile app (Flutter), web app contributions, and a Discord bot for automated mentee tracking.Also the Maintainer",
+    link: "https://amfoss.github.io/ammentor",
+    status :"ongoing"
+  }, 
+  {
+    title: "RuneStone",
+    stack: "Haskell, Postgres, Docker",
+    icon: "/project/runestone/icon.png",  
+    screenshot: "/project/runestone/cover.png",
+    description: "A lightweight, script-powered local PostgreSQL container for all your dev databases enhanced with native Haskell support for clean, type-safe, CLI-based DB management.Built for testing, local development, and fast prototyping not production.",
+    link: "https://amfoss.github.io/ammentor",
     status :"ongoing"
   },
-  {
-    title: "V Track It (FrontEnd)",
-    stack: "Flutter",
-    icon: "/project/VTrackIt_Frontend/icon.png",
-    screenshot: "/project/VTrackIt_Frontend/cover.png",
-    description: "Flutter Front end Application designed for managing Duty Leaves, Staybacks, and Events. It facilitates efficient coordination between students, committee members, faculty, and wardens.",
-    link :"https://github.com/ganidande905/VTrackIt_Frontend", 
-    status :"ongoing"
-  },
-  {
-    title: "V Track It (BackEnd)",
-    stack: "Django",
-    icon: "/project/VTrackIt_Frontend/icon.png",
-    screenshot: "/project/VTrackIt_Backend/cover.jpg",
-    description: "Django Backend for the V Track It Application with Role-Based Access Control. This system includes features such as applying for duty leave and staybacks, managing events, and approval workflows.",
-    link :"https://github.com/ganidande905/VTrackIt_Backend", 
-    status :"ongoing"
-  },
+
   {
     title: "Vision",
     stack: "Vue",
@@ -35,25 +54,25 @@ export const projects = [
     link: "https://www.github.com/ganidande905/Vision",
     status :"ongoing"
   },
-  {
-    title: "amMentor-Gamified",
-    stack: "Kotlin,Firebase",
-    icon: "/project/amMentor-Gamified/icon.png",
-    screenshot: "/project/amMentor-Gamified/cover.png",
-    description: "A gamified mentorship platform for students to connect with mentors and track their progress.This has been built as a project for internal hackthon in amFoss. I set up the backend in firebase and has all basic functionalites.",
-    link :"https://github.com/ganidande905/amMentor_Kotlin",
-    status : "completed"
-  },
-  {
-    title : "amMentor-DiscordBot",
-    stack: "Python",
-    icon :"/project/amMentor-DiscordBot/icon.png",
-    screenshot:"/project/amMentor-DiscordBot/cover.png",
-    description: "I built this bot on python, I wanted this bot because it would be easier for me track mentee's progress on the curriculum given in the discord server itslef rather than going to spreadsheet, which later has become official club project",
-    link :"https://github.com/amfoss/amMentor",
-    status :"completed"
+  // {
+  //   title: "amMentor-Gamified",
+  //   stack: "Kotlin,Firebase",
+  //   icon: "/project/amMentor-Gamified/icon.png",
+  //   screenshot: "/project/amMentor-Gamified/cover.png",
+  //   description: "A gamified mentorship platform for students to connect with mentors and track their progress.This has been built as a project for internal hackthon in amFoss. I set up the backend in firebase and has all basic functionalites.",
+  //   link :"https://github.com/ganidande905/amMentor_Kotlin",
+  //   status : "completed"
+  // },
+  // {
+  //   title : "amMentor-DiscordBot",
+  //   stack: "Python",
+  //   icon :"/project/amMentor-DiscordBot/icon.png",
+  //   screenshot:"/project/amMentor-DiscordBot/cover.png",
+  //   description: "I built this bot on python, I wanted this bot because it would be easier for me track mentee's progress on the curriculum given in the discord server itslef rather than going to spreadsheet, which later has become official club project",
+  //   link :"https://github.com/amfoss/amMentor",
+  //   status :"completed"
 
-  },
+  // },
   {
     title: "Flavour Voyage",
     stack: "HTML,CSS,JS",
@@ -104,4 +123,16 @@ export const projects = [
     status :"hold"
   },
   
+];
+
+export const openSource = [
+  {
+    title: "Ultimate Alarm Clock",
+    description: "Improved UI/UX in Flutter and implemented recurring alarm logic.",
+    link: "",
+    stack: "Flutter",
+    icon: "/project/CCextractor/icon.png",
+    screenshot: "/project/CCextractor/cover.jpg",
+    
+  }
 ];
