@@ -179,7 +179,8 @@ p {
 
 .socials {
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  width: 100%;
   margin-top: 30px;
 }
 
@@ -188,6 +189,10 @@ p {
   gap: 15px;
   list-style: none;
   padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .socials button {
@@ -310,16 +315,12 @@ p {
     margin: 5px 0;
   }
 
-  .socials ul {
-    justify-content: center;
-  }
-
   .skills-grid {
     justify-content: center;
   }
 
   .image {
-    display: none; 
+    display: none; /* 🔥 Hides profile image on small screens */
   }
 
   .profile-section {
