@@ -3,8 +3,8 @@
 export const workExperience = [
     {
       company: "BuildNook",
-      logo: "/work/BuildNook/icon.png", // place this logo in /public/logos/
-      role: "Founder & Full-Stack Developer",
+      logo: "/work/BuildNook/icon.png", 
+      role: "Founder & CEO",
       duration: "March 2025 – Present",
       location: "Remote",
       type: "Full-Time",

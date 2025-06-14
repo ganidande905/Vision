@@ -20,7 +20,7 @@
             <p class="date">{{ project.date }}</p>
             <p class="description">{{ project.description }}</p>
             <a :href="project.link" target="_blank" rel="noopener noreferrer" class="live-view">
-              <span class="live-text">Live view →</span>
+              <span class="live-text">View Project →</span>
               <span class="live-bg"></span>
             </a>
           </div>
