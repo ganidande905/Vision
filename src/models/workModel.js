@@ -24,10 +24,10 @@ export const workExperience = [
     {
         company: "CCExtractor",
         logo: "/work/CCextractor/icon.png",
-        role: "GSoC Contributor (Mentored)",
-        duration: "Summer 2024",
+        role: "Contributor",
+        duration: "December 2024 – Present",
         location: "Remote",
-        type: "Internship (GSoC)",
+        type: "Open Source",
         description: `Worked on the Ultimate Alarm Clock Flutter app. Designed and implemented new features, enhanced UI/UX, and contributed significantly to improving code architecture and cross-platform compatibility.`,
         technologies: ["Flutter", "Dart", "Git", "CI/CD"]
       },
