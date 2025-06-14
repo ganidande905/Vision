@@ -1,150 +1,106 @@
 <template>
-    <section class="education-container">
-      <h2 class="title">My Education Journey</h2>
-      <div class="timeline">
-        <div v-for="(item, index) in educationData" :key="index" class="timeline-item">
-          
-          <!-- Parent Timeline Node -->
-          <div class="timeline-node"></div>
-  
-          <!-- Parent Timeline Content -->
-          <div class="timeline-content">
-            <h3 class="degree">{{ item.degree }}</h3>
-            <p class="university">{{ item.university }} {{ item.year }}</p>
-            <p class="description">{{ item.description }}</p>
-  
-            <!-- Nested (Sub) Timeline -->
-            <div class="sub-timeline">
-              <div v-for="(subItem, subIndex) in item.details" :key="subIndex" class="sub-item">
-                
-                <!-- Sub Timeline Node -->
-                <div class="sub-node"></div>
-  
-                <!-- Sub Timeline Content -->
-                <div class="sub-content">
-                  <h4 class="sub-title">{{ subItem.title }}</h4>
-                  <p class="sub-description">{{ subItem.description }}</p>
-                </div>
-              </div>
-            </div>
-  
+  <section class="education-container">
+    <h2 class="title">My Education Journey</h2>
+
+    <div class="education-cards">
+      <div v-for="(item, index) in educationData" :key="index" class="education-card">
+        <h3 class="degree">{{ item.degree }}</h3>
+        <p class="university">{{ item.university }} &bull; {{ item.year }}</p>
+        <p class="description">{{ item.description }}</p>
+
+        <div class="details" v-if="item.details && item.details.length">
+          <div v-for="(subItem, subIndex) in item.details" :key="subIndex" class="detail">
+            <h4 class="sub-title">{{ subItem.title }}</h4>
+            <p class="sub-description">{{ subItem.description }}</p>
           </div>
         </div>
       </div>
-    </section>
-  </template>
-  
-  <script>
-  import { education } from "@/models/educationModel.js";
-  
-  export default {
-    data() {
-      return {
-        educationData: education
-      };
-    }
-  };
-  </script>
-  
-  <style scoped>
-  /* Container */
-  .education-container {
-    max-width: 900px;
-    margin: auto;
-   
-    background-color: none !important;
+    </div>
+  </section>
+</template>
 
-  }
-  
-  .title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
- 
-    color: #333;
-  }
-  
-  /* Parent Timeline */
-  .timeline {
-    position: relative;
-    border-left: 3px solid #88898a;
-  }
-  
-  /* Parent Timeline Nodes */
-  .timeline-node {
-    width: 14px;
-    height: 14px;
-    background-color: #0b0b0b;
-    border-radius: 50%;
-    position: absolute;
-    left: -8px;
-  }
-  
-  /* Parent Timeline Content */
-  .timeline-item {
-    position: relative;
-  }
-  
-  .timeline-content {
-    padding-left: 20px;
-    background: none !important;
-  }
-  
-  .degree {
-    font-size: 20px;
-    font-weight: bold;
-    color: #222;
-  }
-  
-  .university {
-    font-size: 16px;
-    font-weight: 500;
-    color: #232323;
-  }
-  
-  .description {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    color: #000000;
-    /* margin-top: 5px; */
-  }
-  
-  /* === SUB TIMELINE === */
-  .sub-timeline {
-    border-left: 2px solid #888;
-  }
-  
-  /* Sub Timeline Nodes */
-  .sub-node {
-    width: 10px;
-    height: 10px;
-    background-color: #888;
-    border-radius: 50%;
-    position: absolute;
-    left: -5px;
-  }
-  
-  /* Sub Timeline Items */
-  .sub-item {
-    position: relative;
-    margin-bottom: 15px;
-  }
-  
-  .sub-content {
-    background: none !important;
-    padding-left: 10px;
+<script>
+import { education } from "@/models/educationModel.js";
 
+export default {
+  data() {
+    return {
+      educationData: education
+    };
   }
-  
-  .sub-title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .sub-description {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    color: #303030;
-  }
-  </style>
+};
+</script>
+
+<style scoped>
+.education-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* Cards Layout */
+.education-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.education-card {
+  background: #1c1c1c;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1);
+}
+
+.degree {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.university {
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 15px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.details {
+  margin-top: 10px;
+}
+
+.detail {
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.sub-description {
+  font-size: 14px;
+  color: #bbbbbb;
+}
+</style>

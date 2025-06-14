@@ -4,7 +4,7 @@
         <ul>
           <li class="active"><router-link to="/">Home</router-link></li>
           <li><router-link to="/projects">Projects</router-link></li>
-          <li><router-link to="/Contact">Contact</router-link></li>
+          <li><router-link to="/blogs">Blogs</router-link></li>
         </ul>
       </nav>
     </header>
@@ -25,13 +25,10 @@
   padding: 20px; /* Simplified padding */
   width: 100%;
   height: 100%;
-  --color: #E1E1E1;
-  background-color: #F3F3F3;
-  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-color: black;
   background-size: 55px 55px;
   position: relative;
-  color: black;
+  color: white;
 }
 
 /* Navigation menu styles */
@@ -50,8 +47,8 @@
 .header ul li a {
   text-decoration: none; /* Removes underlines */
   padding: 10px 20px; /* Increased padding for better usability */
-  color: #000000; /* Black text color */
-  border-radius: 0px; /* Rounded corners for buttons */
+  color: white; /* Black text color */
+  border-radius: 10px; /* Rounded corners for buttons */
   transition: all 0.3s ease; /* Smooth hover animation */
 }
 
@@ -59,6 +56,6 @@
 .header ul li a:hover,
 .header ul li a.router-link-active {
   background: #797878ad; /* Light pink background on hover */
-  color: #000000; /* Dark purple text color on hover */
+  color: white; /* Dark purple text color on hover */
 }
 </style>
