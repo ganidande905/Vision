@@ -79,7 +79,7 @@
         </section>
 
         <div class="last-update">
-          <p>Last updated on : 13th March 2025</p>
+          <p>Last updated on : 15th June 2025</p>
         </div>
       </div>
     </transition>
@@ -113,6 +113,7 @@ body {
   background-color: #0f0f0f;
   color: #e5e7eb;
 }
+
 .container {
   display: flex;
   flex-direction: row;
@@ -122,7 +123,9 @@ body {
   max-width: 1100px;
   margin: auto;
   padding: 50px 30px;
+  flex-wrap: wrap;
 }
+
 .info {
   flex: 1;
   max-width: 550px;
@@ -169,7 +172,7 @@ p {
 }
 
 .image img {
-  max-width: 350px;
+  max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
@@ -185,7 +188,6 @@ p {
   gap: 15px;
   list-style: none;
   padding: 0;
-  text-decoration: none;
 }
 
 .socials button {
@@ -199,14 +201,14 @@ p {
   transition: background 0.3s ease;
   text-decoration: none;
 }
-.socials button a{
+.socials button a {
   color: black;
   text-decoration: none;
 }
 .socials button:hover {
   background-color: black;
 }
-.socials button a:hover{
+.socials button a:hover {
   color: white;
   text-decoration: none;
 }
@@ -248,6 +250,7 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  max-width: 100%;
 }
 
 .leetcode-tracker {
@@ -255,7 +258,8 @@ p {
 }
 
 .leetcode-badge {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
@@ -266,7 +270,8 @@ p {
 }
 
 .github-graph {
-  max-width: 70%;
+  width: 100%;
+  max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
@@ -274,5 +279,52 @@ p {
 .last-update p {
   font-size: 12px;
   color: #9ca3af;
+}
+
+/* 🌐 Responsive Styling */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .info,
+  .profile-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .lists {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .left li,
+  .right li {
+    margin: 5px 0;
+  }
+
+  .socials ul {
+    justify-content: center;
+  }
+
+  .skills-grid {
+    justify-content: center;
+  }
+
+  .image {
+    display: none; 
+  }
+
+  .profile-section {
+    gap: 10px;
+    margin-top: 20px;
+  }
 }
 </style>
