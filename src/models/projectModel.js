@@ -1,15 +1,5 @@
 export const projects = [
   {
-    title: "amMentor EcoSystem",
-    stack: "Flutter, Nextjs, FastAPI",
-    icon: "/project/amMentor/icon.png",  
-    screenshot: "/project/amMentor/cover.png",
-    description: "Led and built the entire amMentor ecosystem for our tech club including the backend (FastAPI), mobile app (Flutter), web app contributions, and a Discord bot for automated mentee tracking. Also the Maintainer.",
-    link: "https://amfoss.github.io/ammentor",
-    status: "ongoing",
-    date: "Mar 2024 – Present"
-  }, 
-  {
     title: "RuneStone",
     stack: "Haskell, Postgres, Docker",
     icon: "/project/runestone/icon.png",  
@@ -17,7 +7,17 @@ export const projects = [
     description: "A lightweight, script-powered local PostgreSQL container for all your dev databases enhanced with native Haskell support for clean, type-safe, CLI-based DB management. Built for testing, local development, and fast prototyping not production.",
     link: "https://amfoss.github.io/ammentor",
     status: "ongoing",
-    date: "Feb 2024 – Present"
+    date: "June 2025 – Present"
+  },
+  {
+    title: "amMentor EcoSystem",
+    stack: "Flutter, Nextjs, FastAPI",
+    icon: "/project/amMentor/icon.png",  
+    screenshot: "/project/amMentor/cover.png",
+    description: "Led and built the entire amMentor ecosystem for our tech club including the backend (FastAPI), mobile app (Flutter), web app contributions, and a Discord bot for automated mentee tracking. Also the Maintainer.",
+    link: "https://amfoss.github.io/ammentor",
+    status: "ongoing",
+    date: "Mar 2025 – Present"
   },
   {
     title: "Vision",
@@ -27,17 +27,7 @@ export const projects = [
     description: "I built my portfolio website using Vue.js to learn the stack while developing it. This project showcases my work, skills, and ongoing projects, serving as both a learning experience and a professional portfolio.",
     link: "https://www.github.com/ganidande905/Vision",
     status: "ongoing",
-    date: "May 2024 – Present"
-  },
-  {
-    title: "Flavour Voyage",
-    stack: "HTML, CSS, JS",
-    icon: "/project/FlavourVoyage/icon.jpeg",
-    screenshot: "/project/FlavourVoyage/cover.png",
-    description: "Your passport to culinary exploration! I built this to practice my HTML, CSS, and JavaScript skills. This project allowed me to improve my HTML structure, experiment with CSS styling, and use JavaScript to handle dynamic interactions on the page.",
-    link: "https://github.com/ganidande905/flavourvoyage",
-    status: "completed",
-    date: "Dec 2023"
+    date: "Feb 2025 – Present"
   },
   {
     title: "Sound Studio",
@@ -47,7 +37,7 @@ export const projects = [
     description: "A music production backend server built with Node.js and PostgreSQL, supporting client session management, studio bookings, audio recording, and equipment assignments.",
     link: "https://github.com/ganidande905/SoundStudio",
     status: "completed",
-    date: "Nov 2023"
+    date: "Jan 2025"
   },
   {
     title: "Travel Agency",
@@ -57,17 +47,7 @@ export const projects = [
     description: "A command-line application for managing tour bookings with Role-Based Access Control. Built as a college project, this system allows admins, agents, and customers to interact securely through a terminal interface.",
     link: "https://github.com/ganidande905/TravelAgency",
     status: "completed",
-    date: "Sep 2023"
-  },
-  {
-    title: "StoryMode Game",
-    stack: "Python",
-    icon: "/project/StoryModeGame/icon.png",
-    screenshot: "/project/StoryModeGame/cover.jpg",
-    description: "A Python terminal-based adventure game built as a college project. This game demonstrates the power of Python for interactive storytelling while enhancing logical flow and decision-making.",
-    link: "https://github.com/ganidande905/STORYMODE-GAME",
-    status: "completed",
-    date: "Jul 2023"
+    date: "Jan 2025"
   },
   {
     title: "CarbonX",
@@ -77,7 +57,27 @@ export const projects = [
     description: "Me and my team developed a mobile application for a hackathon that tracks users’ carbon footprints and suggests ways to reduce them. The backend is yet to be built and will be developed later.",
     link: "https://www.github.com/ganidande905/CarbonX",
     status: "hold",
-    date: "Jan 2024"
+    date: "Dec 2024"
+  },
+  {
+    title: "Flavour Voyage",
+    stack: "HTML, CSS, JS",
+    icon: "/project/FlavourVoyage/icon.jpeg",
+    screenshot: "/project/FlavourVoyage/cover.png",
+    description: "Your passport to culinary exploration! I built this to practice my HTML, CSS, and JavaScript skills. This project allowed me to improve my HTML structure, experiment with CSS styling, and use JavaScript to handle dynamic interactions on the page.",
+    link: "https://github.com/ganidande905/flavourvoyage",
+    status: "completed",
+    date: "April 2024"
+  },
+  {
+    title: "StoryMode Game",
+    stack: "Python",
+    icon: "/project/StoryModeGame/icon.png",
+    screenshot: "/project/StoryModeGame/cover.jpg",
+    description: "A Python terminal-based adventure game built as a college project. This game demonstrates the power of Python for interactive storytelling while enhancing logical flow and decision-making.",
+    link: "https://github.com/ganidande905/STORYMODE-GAME",
+    status: "completed",
+    date: "Dec 2023"
   }
 ];
 export const openSource = [
