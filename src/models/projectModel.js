@@ -5,7 +5,7 @@ export const projects = [
     icon: "/project/runestone/icon.png",  
     screenshot: "/project/runestone/cover.png",
     description: "A lightweight, script-powered local PostgreSQL container for all your dev databases enhanced with native Haskell support for clean, type-safe, CLI-based DB management. Built for testing, local development, and fast prototyping not production.",
-    link: "https://amfoss.github.io/ammentor",
+    link: "https://github.com/ganidande905/runestone",
     status: "ongoing",
     date: "June 2025 – Present"
   },
