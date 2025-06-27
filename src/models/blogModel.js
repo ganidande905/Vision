@@ -6,5 +6,10 @@ export const blogs = [
       link: "https://blog.ganidande.com/posts/why-education-is-broken/",
       
     },
+    {
+      title: "From Monoliths to Microservices: How Software Architecture Grew Up (and Got Complicated)",
+      preview: "We started with simple monoliths, added tiers, and ended up juggling hundreds of services. Here's the journey — with all its beauty, chaos, and containers.",
+      link: "https://blog.ganidande.com/posts/the-evolution-of-application-design/",
+    }
 
   ];
