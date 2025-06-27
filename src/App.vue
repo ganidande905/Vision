@@ -30,6 +30,7 @@ body {
   height: 100%;
   background-color: black;
   background-size: 55px 55px;
+  overflow-x: hidden;
 }
 main {
   min-height: 80vh;

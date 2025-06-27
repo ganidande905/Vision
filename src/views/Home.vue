@@ -32,7 +32,11 @@
         <transition name="fade" appear>
           <div class="socials">
             <ul>
-              <li><a href="https://drive.google.com/file/d/17pruCoVc3vzTlxGtutCjGcfbwvu2P7EX/view?usp=sharing" target="_blank" class="resume-link">Resume</a> </li>
+              <li>
+            <a href="https://drive.google.com/file/d/17pruCoVc3vzTlxGtutCjGcfbwvu2P7EX/view?usp=sharing" target="_blank" class="resume-button">
+              View Resume
+            </a>
+          </li>
               <li><a href="https://www.github.com/ganidande905"><i class='bx bxl-github'></i></a></li>
               <li><a href="https://www.linkedin.com/in/ganeswaradande"><i class='bx bxl-linkedin'></i></a></li>
               <li><a href="mailto:dandegani57@gmail.com"><i class='bx bx-at'></i></a></li>
@@ -175,6 +179,22 @@ p {
   max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+.resume-button {
+  display: inline-block;
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-button:hover {
+  background-color: #374151;
+  transform: scale(1.05);
 }
 
 .socials {
