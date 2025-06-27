@@ -32,7 +32,7 @@
         <transition name="fade" appear>
           <div class="socials">
             <ul>
-              <li><a href="https://drive.google.com/file/d/17pruCoVc3vzTlxGtutCjGcfbwvu2P7EX/view?usp=sharing" target="_blank" class="resume-link"><i class='bx bxs-file'></i></a> </li>
+              <li><a href="https://drive.google.com/file/d/17pruCoVc3vzTlxGtutCjGcfbwvu2P7EX/view?usp=sharing" target="_blank" class="resume-link">Resume</a> </li>
               <li><a href="https://www.github.com/ganidande905"><i class='bx bxl-github'></i></a></li>
               <li><a href="https://www.linkedin.com/in/ganeswaradande"><i class='bx bxl-linkedin'></i></a></li>
               <li><a href="mailto:dandegani57@gmail.com"><i class='bx bx-at'></i></a></li>
