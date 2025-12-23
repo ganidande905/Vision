@@ -39,6 +39,6 @@ jobs:
           script: |
             set -e
             cd /opt/infra
-            docker compose -f compose.yml -f apps/portfolio.yml pull portfolio
-            docker compose -f compose.yml -f apps/portfolio.yml up -d --no-deps --force-recreate portfolio
+            docker compose -f compose.yml -f apps/vision.yml pull vision
+            docker compose -f compose.yml -f apps/vision.yml up -d --no-deps --force-recreate vision
             docker image prune -f
